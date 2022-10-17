@@ -2,7 +2,10 @@ import Link from "next/link";
 
 
 const Navbar = () => {
-    const { user, username } = { }
+
+    const user = null;
+    const username = null;
+
 
     return(
         <nav className="navbar">
@@ -40,3 +43,5 @@ const Navbar = () => {
         </nav>
     )
 }
+
+export default Navbar
