@@ -4,8 +4,11 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Loader from '../components/Loader'
 
+import toast from 'react-hot-toast'
+
 const Home = () => {
   return (
+    <div>
     <div className={styles.container}>
       <Loader show />
       <Link prefetch={true} href={{
@@ -16,6 +19,8 @@ const Home = () => {
         <a>This Dude's Profile</a>
         </Link>
  </div>
+        <button onClick={() => toast.success('hello toast')}> Please No! </button>
+    </div>
   )
 }
 
